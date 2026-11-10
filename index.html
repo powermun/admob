@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator - Basic Math</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        /* Hero Section mimicking Google Sites background style */
+        .hero-section {
+            position: relative;
+            background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), 
+                        url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            padding: 80px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+        }
+        .hero-title {
+            font-size: 3rem;
+            color: #007bff;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+        .hero-subtitle {
+            font-size: 2.5rem;
+            color: #222;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+        .download-container {
+            margin-top: 30px;
+        }
+        /* Stylish Google Play Download Button design */
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(to bottom, #111, #333);
+            border: 2px solid #fbc02d;
+            border-radius: 12px;
+            padding: 12px 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        .download-content {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .playstore-icon {
+            font-size: 32px;
+        }
+        .download-text-group {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
+        .download-subtext {
+            font-size: 11px;
+            color: #bbb;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .download-maintext {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+        /* Footer style */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #fff;
+            font-size: 13px;
+            color: #777;
+            border-top: 1px solid #ddd;
+        }
+        /* Responsive design for mobile screens */
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2rem; }
+            .hero-subtitle { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Hero Banner Section -->
+    <div class="hero-section">
+        <h1 class="hero-title">Smart, Fast & Lightweight</h1>
+        <h2 class="hero-subtitle">Calculator for Android</h2>
+        
+        <div class="download-container">
+            <!-- Replace '#' with your actual Google Play Store app link -->
+            <a href="#" class="download-btn">
+                <div class="download-content">
+                    <span class="playstore-icon">▶</span>
+                    <div class="download-text-group">
+                        <span class="download-subtext">Get it on</span>
+                        <span class="download-maintext">Google Play</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 My Calculator - Basic Math. All rights reserved.
+    </footer>
+
+</body>
+</html>
